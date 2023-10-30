@@ -1,0 +1,67 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    .top{
+        .logo-area{
+            padding: 5px;
+            .logo{
+                max-width: 65px;
+            }
+            form{
+                width: 100%;
+                max-width: 450px;
+                input{
+                    background-color: #3137d1f5;
+                    border: 1px solid #494949;
+                    border-radius: 30px;
+                    width: 100%;
+                    padding: 5px;
+                    color:white;
+                }
+                input::placeholder{
+                    color: wheat;
+                    
+                }
+                button{
+                    background-color: #6e6f9100;
+                    border: 0;
+                    margin-left: -40px;
+                }
+                button::before{
+                    content: "\f002";
+                    font-family: fontAwesome;
+                    color: white;
+                    background: #4448d4f5;
+                    padding: 8px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .menu-area{
+            nav{
+                ul{
+                    padding: 0;
+                    li{
+                        list-style-type: none;
+                        padding: 3px 6px 0px 3px;
+    
+                        a{
+                            color: white;
+                            font-size: 12px;
+                            i{
+                                font-size: 30px;
+                                padding: 5px;
+                            }
+                            .menu-active{
+                                background-color: #3035CF;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

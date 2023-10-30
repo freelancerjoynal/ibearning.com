@@ -1,0 +1,43 @@
+#courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    grid-gap: 20px;
+    .card{
+        border: $bWidth solid $borderColor;
+        border-radius: $bRadius;
+        font-family: $font-roboto;
+        .card-title{
+            font-size: 18px;
+            font-weight: 300;
+            color: black;
+            
+        }
+        .action-area{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        a{
+            font-size: 13px;
+        }
+        .card-img-top {
+            height: 180px;
+          }
+    
+    }
+}
+.modal-body{
+    label{
+        font-size: 13px;
+        font-style: italic;
+        color: rgb(66, 40, 2);
+    }
+    input,textarea{
+        font-size: 14px;
+    }
+}
+@media (max-width:768px) {
+    #courses{
+        grid-template-columns: 1fr;
+    }
+}

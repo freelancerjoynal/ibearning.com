@@ -1,0 +1,40 @@
+.article-area{
+    border-radius: 15px 0px 15px 0px;
+    padding: 20px;
+    margin-top: 10px;
+    
+
+    article{
+        border: 1px solid rgb(240, 238, 238);
+        border-radius: 2px ;
+        padding: 10px 50px;
+        .user-info{
+            a{
+                img{
+                    width: 35px;
+                    height: 35px;
+                    border:1px solid rgb(105, 105, 105);
+                    border-radius: 50%;
+                }
+                p{
+                    font-weight: 600;
+                    color: #1F24B2;
+                }
+            }
+        }
+        .image{
+            border-radius: 5px;
+        }
+        
+    }
+    
+}
+@media (max-width:768px){
+    .article-area{
+        article{
+            border: 1px solid #f0eeee;
+            border-radius: 2px;
+            padding: 10px 5px;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+/*Global Colors*/
+/*Border-information*/
+/*Global Font Size*/
+/*Global Font Weights*/
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+}
+
+.border-b {
+  border-bottom: 3px solid black;
+}
+
+.sticky-notice {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  border: 1px solid #1F24B2;
+  border-radius: 5px;
+}
+
+.absolute-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  background-color: #1F24B2 !important;
+}
+.navbar ul li a {
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.navbar ul li .dropdown-menu {
+  background-color: #1F24B2;
+}
+.navbar ul li .dropdown-menu a:hover {
+  background-color: #1F24B2;
+  color: white !important;
+  font-weight: 600;
+}
+.navbar img {
+  width: 100px;
+}
+
+#courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  grid-gap: 20px;
+}
+#courses .card {
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+#courses .card .card-title {
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+}
+#courses .card .action-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#courses .card a {
+  font-size: 13px;
+}
+#courses .card .card-img-top {
+  height: 180px;
+}
+
+.modal-body label {
+  font-size: 13px;
+  font-style: italic;
+  color: #422802;
+}
+.modal-body input, .modal-body textarea {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #courses {
+    grid-template-columns: 1fr;
+  }
+}
+footer {
+  background-color: #1F24B2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  margin-top: 100px;
+}
+footer .developer {
+  font-size: 10px;
+}
+footer .developer a {
+  color: burlywood;
+}
+
+/*# sourceMappingURL=style.css.map */

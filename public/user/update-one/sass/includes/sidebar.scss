@@ -1,0 +1,39 @@
+#sidebar{
+    border-radius: 0px 15px 0px 15px;
+    position: sticky !important;
+    top: 85px !important;
+    .avatar{
+        height: 100px;
+        width: 100px;
+        border: 1px solid rgb(36, 31, 31);
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position:center center;
+        background-size: cover;
+        
+    }
+    nav{
+        ul{
+            li{
+                list-style-type: none;
+                a{
+                    color: black;
+                    font-weight: 600;
+                    font-size: 22px;
+                    transition: .3s ease-in-out;
+                    
+                }
+                a:hover {
+                    margin-left: 10px;
+                }
+                
+            }
+            li:before{
+                content: '\f101';
+                font-family: fontAwesome;
+                color: rgb(1, 51, 1);
+                padding-right: 10px;
+            }
+        }
+    }
+}
