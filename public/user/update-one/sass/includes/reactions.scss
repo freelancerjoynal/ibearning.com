@@ -1,0 +1,43 @@
+.reactions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid rgb(255, 231, 231);
+    grid-gap: 2px;
+    div{
+        border: 1px solid rgb(228, 228, 228);
+        position: relative;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .liked{
+        a::before{
+            content: '\f004';
+            font-family: fontAwesome;
+            padding-right: 5px;
+            color: red;
+        }
+		background-color:#ffd6ed;
+    }
+    .like{
+        a::before{
+            content: '\f004';
+            font-family: fontAwesome;
+            padding-right: 5px;
+            color: green;
+        }
+    }
+    .comment{
+        a::before{
+            content: '\f0e6';
+            font-family: fontAwesome;
+            padding-right: 5px;
+        }
+    }
+    .views{
+        a::before{
+            content: '\f06e';
+            font-family: fontAwesome;
+            padding-right: 5px;
+        }
+    }
+}

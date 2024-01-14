@@ -1,0 +1,18 @@
+Type
+name
+image
+phone
+whatsapp
+birthDate
+gender
+country
+state
+city
+postal-code
+language
+email
+password
+Total points (Updating System)
+facebook
+payment method type
+payment id

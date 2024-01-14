@@ -1,0 +1,19 @@
+body{
+    font-family: $font-sans;
+}
+.border-b {
+    border-bottom: 3px solid black;
+}
+.sticky-notice {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    border: 1px solid $bgColor;
+    border-radius: $bRadius;
+}
+.absolute-middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

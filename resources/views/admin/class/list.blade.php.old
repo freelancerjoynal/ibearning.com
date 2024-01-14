@@ -1,0 +1,77 @@
+@extends('admin.layout.app')
+@section('title')
+    Classlist - Admin
+@endsection
+@section('style')
+    <style>
+        .class-list{
+            max-width: 600px;
+        }
+        .class{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+    </style>
+@endsection
+@section('content')
+<br>
+    <div class="class-list m-auto card p-3 justify-content-start">
+        <h4 class="pb-2">
+            <span class="bg-dark rounded p-2 text-light">Class List</span>
+            <!--Modal Button for Add new class -->
+            <span class="float-right">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#class">+</button>
+            </span>
+        </h4>
+        @if ($classlist)
+        @foreach( $classlist as $class )
+
+        <div class="class">
+            <div>{{$class['name']}}</div>
+            <div><a href="/web-admin/classes/delete/{{$class['id']}}" class="btn-sm btn-danger" onclick="return confirm('Are your sure to delete?') ">Delete</a></div>
+            <hr>
+        </div>
+
+        @endforeach
+        @endif
+    </div>
+
+
+
+    <!-- The Modal -->
+<div class="modal" id="class">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title">Add new class</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="/web-admin/classes/add-new" method="POST">
+                @csrf
+                <label for="name">Class Name</label>
+                <input name="name" id="name" type="text" required placeholder="Enter class name" class="form-control">
+                <label for="link">Class Link</label>
+                <input name="link" id="link" type="text" required placeholder="Enter class name" class="form-control">
+                <div class="text-right">
+                    <button type="submit" class="btn-sm btn-dark mt-1">Save</button>
+                </div>
+            </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+@endsection
+@section('script')
+    
+@endsection

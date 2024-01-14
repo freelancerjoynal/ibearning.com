@@ -1,0 +1,33 @@
+.post-detail{
+    min-height: 500px;
+    .content-box{
+        border: 1px solid rgb(230, 228, 228);
+        padding: 10px;
+    }
+    
+    .user-info{
+        img{
+            width: 35px;
+            height: 35px;
+            border: 1px solid dimgray;
+            border-radius: 50%;
+        }
+        a{
+            font-weight: 600;
+            color: #1F24B2;
+        }
+    }
+    .comments-view{
+        .comment-box{
+            border: 1px solid rgb(216, 216, 216);
+            padding: 10px;
+            margin-top: 3px;
+            .comment-content p{
+                margin-left: 20px;
+                border-left: 3px solid black;
+                padding-left: 4px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
